@@ -1,6 +1,8 @@
 import unittest
-import Tasks.a1_my_queue as my_queue
-
+import sys
+#import Tasks.a1_my_queue as my_queue
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import a1_my_queue as my_queue
 
 class MyTestCase(unittest.TestCase):
 	def setUp(self):
