@@ -1,5 +1,8 @@
 import unittest
-import Tasks.a2_priority_queue as priority_queue
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import a2_priority_queue as priority_queue
+#import Tasks.a2_priority_queue as priority_queue
 
 
 class MyTestCase(unittest.TestCase):
