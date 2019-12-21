@@ -1,7 +1,9 @@
 import unittest
 import math
-from Tasks.b2_Taylor import ex, sinx
-
+#from Tasks.b2_Taylor import ex, sinx
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+from b2_Taylor import ex, sinx
 
 class MyTestCase(unittest.TestCase):
 	def test_ex(self):
