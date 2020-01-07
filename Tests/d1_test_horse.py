@@ -1,5 +1,7 @@
 import unittest
-import Tasks.d1_horse as horse
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import d1_horse as horse
 
 
 class MyTestCase(unittest.TestCase):

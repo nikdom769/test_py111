@@ -1,6 +1,8 @@
 import unittest
 import networkx as nx
-import Tasks.e0_breadth_first_search as bfs
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import e0_breadth_first_search as bfs
 
 
 class MyTestCase(unittest.TestCase):

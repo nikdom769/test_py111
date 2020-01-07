@@ -2,7 +2,9 @@ import unittest
 import networkx as nx
 from typing import Mapping, Hashable
 
-from Tasks.e2_dijkstra import dijkstra_algo
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+from e2_dijkstra import dijkstra_algo
 
 
 class MyTestCase(unittest.TestCase):

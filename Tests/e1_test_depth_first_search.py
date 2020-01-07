@@ -1,6 +1,8 @@
 import unittest
 import networkx as nx
-import Tasks.e1_depth_first_search as dfs
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import e1_depth_first_search as dfs
 
 
 class MyTestCase(unittest.TestCase):

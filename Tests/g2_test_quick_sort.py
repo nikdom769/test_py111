@@ -1,7 +1,8 @@
 import unittest
 import random
-
-import Tasks.g2_quick_sort as sorter
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import g2_quick_sort as sorter
 
 
 class MyTestCase(unittest.TestCase):
