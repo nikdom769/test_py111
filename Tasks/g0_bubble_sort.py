@@ -10,7 +10,7 @@ def sort(container: Collection[_Tt]) -> Collection[_Tt]:
     :return: container sorted in ascending order
     """
     if len(container) <= 1:
-        return conteiner
+        return container
     else:
         cnt = 0
         for i in range(len(container)):

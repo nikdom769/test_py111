@@ -22,6 +22,20 @@ def merge(a: Collection[_Tt], b: Collection[_Tt]) -> Collection[_Tt]:
             j += 1
 
 
+def merge_new(a: Collection[_Tt], b: Collection[_Tt]) -> Collection[_Tt]:
+    cont = []
+    while a and b:
+        if a[0] <= b[0]:
+            cont.append(a.pop(0))
+        elif a[0] > b[0]:
+            cont.append(b.pop(0))
+    if a:
+        cont.extend(a)
+    elif b:
+        cont.extend(b)
+    return cont
+
+
 
 def sort(container: Collection[_Tt]) -> Collection[_Tt]:
     """
@@ -29,7 +43,7 @@ def sort(container: Collection[_Tt]) -> Collection[_Tt]:
     :param container: container of elements to be sorted
     :return: container sorted in ascending order
     """
-    if len(container) >= 2:
-        return merge(sort(container[:len(container)//2]), sort(container[len(container)//2:]))
+    if len(container) > 1:
+        return merge_new(sort(container[:len(container)//2]), sort(container[len(container)//2:]))
     else:
         return container

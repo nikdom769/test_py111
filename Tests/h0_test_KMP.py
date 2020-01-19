@@ -1,5 +1,7 @@
 import unittest
-from Tasks.h0_KMP import kmp_algo
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+from h0_KMP import kmp_algo
 
 
 class MyTestCase(unittest.TestCase):
