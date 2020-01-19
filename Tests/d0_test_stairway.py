@@ -1,5 +1,7 @@
 import unittest
-import Tasks.d0_stairway as stairway_to_heaven
+import sys
+sys.path.append("../Tasks/") # добавлена папка с тестируемыми модулями (проверка из консоли Linux)
+import d0_stairway as stairway_to_heaven
 
 
 class MyTestCase(unittest.TestCase):
